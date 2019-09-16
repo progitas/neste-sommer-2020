@@ -15,7 +15,9 @@ This tile has the coordinate of `(0, 1), x=0, y=1`
 
 ## 2. Progit Photo API
 
-The `Progit photo HTTP API` returns a list of urls pointing to tiles of an image.
+`API URL:` https://europe-west1-progit-playground.cloudfunctions.net/progit-photo-api
+
+The `Progit Photo HTTP API` returns a list of urls pointing to tiles of an image.
 The files are named `{random-string}-x-y.jpg`, where `x` is the column position and `y` is the row position.
 
 This is an example of a subset of the files in the response:
@@ -35,19 +37,21 @@ This is an example of a subset of the files in the response:
 
 **Ex:** The file `https://storage.googleapis.com/progit-interview-problem/images/plznkp-0-7.jpg` has the coordinates of `(0,7)`, `x=0, y=7`
 
-Your solution show read the tile list from the API, download the image files associated with each tile and merge them in the correct order and finally save or print the merged picture.
+Your solution should make a `GET`-request to the API and read the tile list, download the image files associated with each tile, and merge them in the correct order and finally save or print the merged picture.
 
-## 3. Additional information / constraints
+## 3. Your solution should:
+
+- Query the API and fetch the list of images
+- Dynamically calculate the number of columns and rows. Try not to hardcode the column and row dimensions.
+- Dynamically calculate the final size-dimension of the picture
+- Print/show the image or save it to a .jpg file
+
+## 4. Additional information / constraints
 
 - All cells are the same in size
 - The cell width and height is a natural number
 - The width and height is not necessarily equal in size
 
-## 4. Your solution should:
 
-- Query the API and fetch the list of images
-- Dynamically calculate the number of columns and rows. Try not to hardcode the col X row dimensions.
-- Dynamically calculate the final size-dimension of the picture
-- Print/show the image or save it to a .jpg file
 
 You can use any programming language and libraries of choice. You do not need to solve the exercise completely, we are mainly interested in the way you approach the problem and how you chose to structure your code. If you run out of time before completing the problem you should still submit the solution! :)
