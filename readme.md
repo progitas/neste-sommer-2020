@@ -41,9 +41,9 @@ Your solution should make a `GET`-request to the API and read the tile list, dow
 
 ## 3. Your solution should:
 
-- Query the API and fetch the list of images
-- Dynamically calculate the number of columns and rows. Try not to hardcode the column and row dimensions.
-- Dynamically calculate the final size-dimension of the picture
+- Make an HTTP request to the API and fetch the list of images
+- Dynamically calculate the number of columns and rows based on the file names in the list. Try not to hardcode the column and row dimensions.
+- Dynamically calculate the final dimension of the picture, based on the size of each tile.
 - Print/show the image or save it to a .jpg file
 
 ## 4. Additional information / constraints
@@ -51,7 +51,6 @@ Your solution should make a `GET`-request to the API and read the tile list, dow
 - All cells are the same in size
 - The cell width and height is a natural number
 - The width and height is not necessarily equal in size
-
 
 
 You can use any programming language and libraries of choice. You do not need to solve the exercise completely, we are mainly interested in the way you approach the problem and how you chose to structure your code. If you run out of time before completing the problem you should still submit the solution! :)
