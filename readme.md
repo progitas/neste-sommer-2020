@@ -1,10 +1,8 @@
-# Progit Summer internship 2019 interview
-
-Programming exercise for the summer internship interview process
+# Progit Summer internship 2019
 
 ## 1. Problem description
 
-A JPG picture is divided into equally sized tiles which make up a complete image.
+A picture is divided into equally sized tiles which make up a complete image.
 Each tile has an `x` and `y` coordinate, `(x,y)`. The coordinate origin (0,0), starts from the upper left corner. `x` is the column position and `y` is the row position.
 
 ![alt text](https://i.imgur.com/5nvpHGv.jpg "Grid example")
@@ -17,10 +15,10 @@ This tile has the coordinate of `(0, 1), x=0, y=1`
 
 ## 2. Progit Photo API
 
-The `Progit photo API` returns a list of urls pointing to tiles of an image.
+The `Progit photo HTTP API` returns a list of urls pointing to tiles of an image.
 The files are named `{random-string}-x-y.jpg`, where `x` is the column position and `y` is the row position.
 
-Example of a subset of the files in the response:
+This is an example of a subset of the files in the response:
 
 ```
 {
@@ -52,4 +50,4 @@ Your solution show read the tile list from the API, download the image files ass
 - Dynamically calculate the final size-dimension of the picture
 - Print/show the image or save it to a .jpg file
 
-You can use any programming language and libraries of choice. You do not need to solve the exercise completely, we are mainly interested in the way you approach the problem and how you choose to structure your code. If you run out of time before completing the problem you should still submit the solution! :)
+You can use any programming language and libraries of choice. You do not need to solve the exercise completely, we are mainly interested in the way you approach the problem and how you chose to structure your code. If you run out of time before completing the problem you should still submit the solution! :)
