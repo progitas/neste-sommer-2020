@@ -1,4 +1,4 @@
-# Progit Summer internship 2019
+# Progit Summer internship 2019 :computer:
 
 ## 1. Problem description
 
